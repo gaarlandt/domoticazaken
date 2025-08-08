@@ -79,3 +79,39 @@ a{color:inherit;text-decoration:none}
 .tiny{color:#666;font-size:12px}
 
 .site-footer{padding:24px 0;border-top:1px solid rgba(0,0,0,.06);background:#fff}
+
+/* Dark panel */
+.section.dark{background:#0b0b0b;color:#fff}
+.pretitle{
+  letter-spacing:.32em;text-transform:uppercase;font-size:12px;
+  color:rgba(255,255,255,.7);position:relative;padding-left:44px;margin:0 0 10px
+}
+.pretitle:before{content:'';position:absolute;left:0;top:.7em;width:36px;height:2px;background:rgba(255,255,255,.3)}
+.h1{font-size:clamp(28px,4.8vw,56px);line-height:1.05;margin:.25rem 0 1rem}
+
+.split{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:end;margin-bottom:42px}
+@media (max-width:900px){.split{grid-template-columns:1fr;gap:22px}}
+
+.btn.outline{background:transparent;border-color:rgba(255,255,255,.45);color:#fff}
+.btn.outline:hover{border-color:#fff}
+
+/* Cards */
+.cards-4{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+@media (max-width:1100px){.cards-4{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:600px){.cards-4{grid-template-columns:1fr}}
+
+.card.darker{
+  background:#121212;color:#fff;border-radius:16px;padding:26px;
+  display:grid;gap:8px;position:relative;box-shadow:0 8px 24px rgba(0,0,0,.22);
+  transform:translateY(14px);opacity:0;transition:transform .6s, opacity .6s
+}
+.card.darker h3{margin:0 0 6px}
+.card.darker p{margin:0;color:rgba(255,255,255,.72)}
+.card.darker .icon svg{width:40px;height:40px;stroke:#fff;fill:none;stroke-width:2}
+.card.darker .arrow{position:absolute;right:18px;bottom:14px;opacity:.7;transition:transform .2s,opacity .2s}
+.card.darker:hover .arrow{opacity:1;transform:translateX(2px)}
+.card.darker.reveal.visible{transform:none;opacity:1}
+
+/* From-top reveal for whole section */
+.reveal.from-top{transform:translateY(-24px);opacity:0}
+.reveal.visible{transform:translateY(0);opacity:1}
