@@ -13,12 +13,12 @@
     <div class="flex items-center space-x-4">
       <a href="#" class="text-gray-300 hover:text-white transition-colors duration-300 text-sm font-medium">Inloggen</a>
       <a
-        href="https://bouwzaken.spp.co/order/funda_proberen"
-        target="_blank"
+        href="{{ links.cta.main.url }}"
+        target="{{ links.cta.main.target }}"
         rel="noopener noreferrer"
         class="px-5 py-2 bg-purple-600 text-white rounded-md text-sm font-medium hover:bg-purple-700 transition-colors duration-300 shadow-[0_0_10px_theme(colors.purple.600)]"
       >
-        Start Gratis Proefperiode
+        {{ links.cta.main.text }}
       </a>
     </div>
   </nav>

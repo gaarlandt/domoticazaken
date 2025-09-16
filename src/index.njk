@@ -15,12 +15,12 @@ layout: base.njk
             Transformeer je afbeeldingen moeiteloos in verbluffende, professionele meesterwerken met onze geavanceerde AI-technologie. Probeer 1 foto gratis!
         </p>
         <a
-            href="https://bouwzaken.spp.co/order/funda_proberen"
-            target="_blank"
+            href="{{ links.cta.main.url }}"
+            target="{{ links.cta.main.target }}"
             rel="noopener noreferrer"
             class="inline-block px-8 py-4 bg-purple-600 text-white rounded-lg text-lg font-semibold hover:bg-purple-700 transition-all duration-300 shadow-[0_0_20px_theme(colors.purple.600)]"
         >
-            Start Gratis Proefperiode
+            {{ links.cta.main.text }}
         </a>
     </div>
 </section>
@@ -159,8 +159,8 @@ layout: base.njk
                     <li class="flex items-center"><span class="text-purple-400 mr-3">✓</span> Ondersteuning via e-mail</li>
                     <li class="flex items-center"><span class="text-purple-400 mr-3">✓</span> 24-uurs levertijd</li>
                 </ul>
-                <a href="https://bouwzaken.spp.co/order/makelaar" target="_blank" rel="noopener noreferrer" class="block w-full text-center px-6 py-3 rounded-lg font-semibold bg-white/10 hover:bg-white/20">
-                    Begin Nu
+                <a href="{{ links.pricing.starter.url }}" target="{{ links.pricing.starter.target }}" rel="noopener noreferrer" class="block w-full text-center px-6 py-3 rounded-lg font-semibold bg-white/10 hover:bg-white/20">
+                    {{ links.pricing.starter.text }}
                 </a>
             </div>
 
@@ -177,8 +177,8 @@ layout: base.njk
                     <li class="flex items-center"><span class="text-purple-400 mr-3">✓</span> Prioritaire ondersteuning via e-mail</li>
                     <li class="flex items-center"><span class="text-purple-400 mr-3">✓</span> 12-uurs levertijd</li>
                 </ul>
-                <a href="https://bouwzaken.spp.co/order/makelaar" target="_blank" rel="noopener noreferrer" class="block w-full text-center px-6 py-3 rounded-lg font-semibold bg-purple-600 text-white hover:bg-purple-700">
-                    Begin Nu
+                <a href="{{ links.pricing.business.url }}" target="{{ links.pricing.business.target }}" rel="noopener noreferrer" class="block w-full text-center px-6 py-3 rounded-lg font-semibold bg-purple-600 text-white hover:bg-purple-700">
+                    {{ links.pricing.business.text }}
                 </a>
             </div>
 
@@ -194,8 +194,8 @@ layout: base.njk
                     <li class="flex items-center"><span class="text-purple-400 mr-3">✓</span> Toegewijde accountmanager</li>
                     <li class="flex items-center"><span class="text-purple-400 mr-3">✓</span> 6-uurs express levertijd</li>
                 </ul>
-                <a href="https://bouwzaken.spp.co/order/makelaar" target="_blank" rel="noopener noreferrer" class="block w-full text-center px-6 py-3 rounded-lg font-semibold bg-white/10 hover:bg-white/20">
-                    Begin Nu
+                <a href="{{ links.pricing.premium.url }}" target="{{ links.pricing.premium.target }}" rel="noopener noreferrer" class="block w-full text-center px-6 py-3 rounded-lg font-semibold bg-white/10 hover:bg-white/20">
+                    {{ links.pricing.premium.text }}
                 </a>
             </div>
         </div>

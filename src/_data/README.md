@@ -50,3 +50,47 @@ Edit the `services` array:
 3. Build and deploy: `npm run build`
 
 That's it! All references throughout the website will automatically update.
+
+## How to Update Links
+
+All external links are controlled from `links.json`:
+
+### 1. Main CTA Buttons
+Edit the `cta.main` object:
+```json
+"cta": {
+  "main": {
+    "url": "https://your-new-url.com",
+    "text": "Your Button Text",
+    "target": "_blank"
+  }
+}
+```
+
+### 2. Pricing Plan Links
+Edit the `pricing` section:
+```json
+"pricing": {
+  "starter": { "url": "https://...", "text": "Begin Nu" },
+  "business": { "url": "https://...", "text": "Begin Nu" },
+  "premium": { "url": "https://...", "text": "Begin Nu" }
+}
+```
+
+### 3. Footer & Other External Links
+Edit the `external` section:
+```json
+"external": {
+  "helpdesk": {
+    "url": "https://support.yoursite.com",
+    "text": "Customer Support"
+  }
+}
+```
+
+## Benefits
+
+- **Single source of truth** for all external links
+- **Easy URL updates** - change once, updates everywhere
+- **Consistent link behavior** (target, text, etc.)
+- **Easy A/B testing** - just change the URL in one place
