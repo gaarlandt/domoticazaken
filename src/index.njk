@@ -9,10 +9,10 @@ layout: base.njk
     <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[60rem] h-[60rem] bg-purple-900/40 rounded-full blur-3xl -z-10"></div>
     <div class="max-w-4xl mx-auto px-4">
         <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-br from-white to-gray-400 mb-6">
-            Herontdek Je Foto's met AI
+            On-demand Photoshop services
         </h1>
         <p class="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
-            Transformeer je afbeeldingen moeiteloos in verbluffende, professionele meesterwerken met onze geavanceerde AI-technologie. Probeer 1 foto gratis!
+            Bespaar tijd, creëer extra omzet en ontvang premium a.i. upgraded foto’s voor een maandelijkse fixed prijs.
         </p>
         <a
             href="{{ links.cta.main.url }}"
@@ -28,6 +28,7 @@ layout: base.njk
 <!-- Scrolling Showcase Section -->
 <section class="pb-20 md:pb-28">
     <div class="max-w-7xl mx-auto px-4 text-center">
+        <h3 class="mt-16"> </h3>
         <h3 class="text-lg text-gray-400 mb-8 font-medium">Vertrouwd door topmakelaars in het hele land</h3>
         <div class="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
             <ul class="flex items-center justify-center md:justify-start [&_li]:mx-4 [&_img]:max-w-none animate-infinite-scroll">
@@ -127,13 +128,86 @@ layout: base.njk
         <div class="grid md:grid-cols-3 gap-8">
             {% for service in images.services %}
             <div class="rounded-2xl overflow-hidden border border-white/10 group">
-                <img src="{{ service.src | url }}" alt="{{ service.alt }}" class="h-60 w-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                <!-- Interactive Slider for Service -->
+                <div class="service-slider relative w-full h-60 select-none overflow-hidden"
+                     data-before="{{ service.slider.before | url }}"
+                     data-after="{{ service.slider.after | url }}">
+                    <img src="{{ service.slider.after | url }}" alt="Na" draggable="false" class="absolute inset-0 w-full h-full object-cover">
+                    <div class="absolute inset-0 w-full h-full object-cover slider-overlay" style="clip-path: inset(0 50% 0 0);">
+                        <img src="{{ service.slider.before | url }}" alt="Voor" draggable="false" class="absolute inset-0 w-full h-full object-cover">
+                    </div>
+                    <div class="absolute top-0 bottom-0 w-1 bg-white/70 pointer-events-none transition-opacity duration-300 opacity-75 group-hover:opacity-100 slider-line" style="left: 50%; transform: translateX(-50%);">
+                        <div class="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 h-8 w-8 bg-white backdrop-blur-sm rounded-full flex items-center justify-center shadow-lg ring-2 ring-white/50 slider-handle" style="cursor: ew-resize; pointer-events: auto;">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M11 17l-4-4 4-4m6 8l4-4-4-4" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="absolute top-2 left-2 px-2 py-1 bg-black/50 text-white text-xs font-semibold rounded-md pointer-events-none opacity-75 group-hover:opacity-100 transition-opacity">Voor</div>
+                    <div class="absolute top-2 right-2 px-2 py-1 bg-black/50 text-white text-xs font-semibold rounded-md pointer-events-none opacity-75 group-hover:opacity-100 transition-opacity">Na</div>
+                </div>
                 <div class="p-6 bg-white/5">
                     <h3 class="text-xl font-bold mb-2">{{ service.title }}</h3>
                     <p class="text-gray-400">{{ service.description }}</p>
                 </div>
             </div>
             {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="py-20 md:py-28">
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="text-center mb-16">
+            <p class="text-sm font-medium text-purple-400 tracking-wider uppercase mb-4">TESTIMONIALS</p>
+            <h2 class="text-4xl md:text-5xl font-bold tracking-tight mb-4">Creative collaboration.</h2>
+            <p class="text-lg text-gray-400 max-w-3xl mx-auto">
+                View below insights from our trusted partners across the globe.
+            </p>
+        </div>
+        
+        <div class="testimonial-container relative">
+            <div class="testimonial-slider flex gap-8 transition-transform duration-500 ease-in-out">
+                {% for testimonial in testimonials %}
+                <div class="testimonial-card flex-shrink-0 w-full md:w-1/2 lg:w-1/3 bg-white/5 p-8 rounded-2xl border border-white/10">
+                    <!-- Star Rating -->
+                    <div class="flex mb-6">
+                        {% for i in range(0, testimonial.rating) %}
+                        <svg class="w-5 h-5 text-purple-400 fill-current" viewBox="0 0 20 20">
+                            <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                        </svg>
+                        {% endfor %}
+                    </div>
+                    
+                    <!-- Testimonial Text -->
+                    <p class="text-white text-lg mb-8 leading-relaxed">{{ testimonial.text }}</p>
+                    
+                    <!-- Author Info -->
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4 flex-shrink-0">
+                            <img src="{{ testimonial.avatar | url }}" alt="{{ testimonial.name }}" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <p class="text-white font-semibold">{{ testimonial.name }}</p>
+                            <p class="text-gray-400 text-sm">{{ testimonial.title }}</p>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            
+            <!-- Navigation Arrows -->
+            <button class="testimonial-prev absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-colors duration-300 border border-white/20">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                </svg>
+            </button>
+            <button class="testimonial-next absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-colors duration-300 border border-white/20">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                </svg>
+            </button>
         </div>
     </div>
 </section>

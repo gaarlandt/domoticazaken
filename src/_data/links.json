@@ -2,9 +2,15 @@
   "cta": {
     "main": {
       "url": "https://bouwzaken.spp.co/order/funda_proberen",
-      "text": "Start Gratis Proefperiode",
+      "text": "Gratis 1 foto proberen!",
       "target": "_blank",
       "description": "Main hero CTA button"
+    },
+    "inloggen": {
+      "url": "https://bouwzaken.spp.co/portal/dashboard",
+      "text": "Inloggen",
+      "target": "_blank",
+      "description": "Login link for existing users"
     }
   },
   "pricing": {
@@ -29,7 +35,7 @@
   },
   "external": {
     "learn_more": {
-      "url": "https://bouwzaken.spp.co/info",
+      "url": "",
       "text": "Meer informatie",
       "target": "_blank",
       "description": "General information page"

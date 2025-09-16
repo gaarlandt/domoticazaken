@@ -1,17 +1,15 @@
 <header class="sticky top-0 z-50 w-full border-b border-white/10 bg-black/30 backdrop-blur-lg">
   <nav class="max-w-7xl mx-auto flex items-center justify-between p-4">
-    <div class="text-2xl font-bold tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500">
-      Mister Funda
-    </div>
+    <a href="#hero" class="text-2xl font-bold tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500">Mister Funda</a>
     <ul class="hidden md:flex items-center space-x-8">
-      <li><a href="#process" class="text-gray-300 hover:text-white transition-colors duration-300 cursor-pointer">Proces</a></li>
-      <li><a href="#benefits" class="text-gray-300 hover:text-white transition-colors duration-300 cursor-pointer">Voordelen</a></li>
-      <li><a href="#services" class="text-gray-300 hover:text-white transition-colors duration-300 cursor-pointer">Diensten</a></li>
-      <li><a href="#pricing" class="text-gray-300 hover:text-white transition-colors duration-300 cursor-pointer">Prijzen</a></li>
-      <li><a href="#faqs" class="text-gray-300 hover:text-white transition-colors duration-300 cursor-pointer">FAQ</a></li>
+      <li><a href="#process" class="text-gray-300 hover:text-white transition-colors duration-300 cursor-pointer font-bold">Proces</a></li>
+      <li><a href="#benefits" class="text-gray-300 hover:text-white transition-colors duration-300 cursor-pointer font-bold">Voordelen</a></li>
+      <li><a href="#services" class="text-gray-300 hover:text-white transition-colors duration-300 cursor-pointer font-bold">Diensten</a></li>
+      <li><a href="#pricing" class="text-gray-300 hover:text-white transition-colors duration-300 cursor-pointer font-bold">Prijzen</a></li>
+      <li><a href="#faqs" class="text-gray-300 hover:text-white transition-colors duration-300 cursor-pointer font-bold">FAQ</a></li>
     </ul>
     <div class="flex items-center space-x-4">
-      <a href="#" class="text-gray-300 hover:text-white transition-colors duration-300 text-sm font-medium">Inloggen</a>
+      <a href="{{ links.cta.inloggen.url }}" target="{{ links.cta.inloggen.target }}" rel="noopener noreferrer" class="text-gray-300 hover:text-white transition-colors duration-300 text-sm font-bold">{{ links.cta.inloggen.text }}</a>
       <a
         href="{{ links.cta.main.url }}"
         target="{{ links.cta.main.target }}"
