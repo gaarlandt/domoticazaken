@@ -1,0 +1,40 @@
+{
+  "showcase": [
+    {
+      "src": "/images/Funda foto product.jpeg",
+      "alt": "Professional real estate photo"
+    },
+    {
+      "src": "/images/Bennekom-Project-Garden.jpeg", 
+      "alt": "Beautiful garden exterior"
+    },
+    {
+      "src": "/images/Foto realistisch product.jpeg",
+      "alt": "Realistic photo enhancement"
+    }
+  ],
+  "slider": {
+    "before": "/slider-images/before.jpeg",
+    "after": "/slider-images/After.jpg"
+  },
+  "services": [
+    {
+      "src": "/images/240704_Papentorenvest-10-20-34-Haarlem_W34-2.01_Int_bedroom.jpeg",
+      "alt": "Stylish interior bedroom",
+      "title": "Interieur Showcase",
+      "description": "Verbeter interieurfoto's met perfecte verlichting, kleurcorrectie en AI-gestuurde virtuele staging."
+    },
+    {
+      "src": "/images/240723_Papentorenvest-10-20-34-Haarlem_Building-34-40-Front_Rev004-scaled.jpeg", 
+      "alt": "Modern brick building exterior",
+      "title": "Exterieur Aanzicht",
+      "description": "Transformeer de buitenkant van panden met luchtvervanging, digitale landschapsarchitectuur en lichtaanpassingen."
+    },
+    {
+      "src": "/images/Bennekom-Project-Garden.jpeg",
+      "alt": "Light interior with design furniture",
+      "title": "3D Plattegronden", 
+      "description": "Bied klanten een duidelijke indeling van het pand, zodat ze de ruimte en de doorstroom kunnen visualiseren."
+    }
+  ]
+}
