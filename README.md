@@ -92,6 +92,15 @@ npm run build
 
 De site wordt automatisch deployed naar GitHub Pages bij elke push naar de main branch via GitHub Actions.
 
+### GitHub Pages Setup
+
+1. Ga naar je repository settings
+2. Klik op "Pages" in de linker sidebar
+3. Onder "Source", selecteer "GitHub Actions"
+4. De workflow zorgt automatisch voor de deployment
+
+**Belangrijk**: Zorg ervoor dat GitHub Pages is geconfigureerd om GitHub Actions te gebruiken, NIET "Deploy from a branch".
+
 Live site: https://gaarlandt.github.io/domoticazaken/
 
 ## Browser Support
