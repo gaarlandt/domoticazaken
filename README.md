@@ -103,6 +103,9 @@ De site wordt automatisch deployed naar GitHub Pages bij elke push naar de main 
 
 Live site: https://gaarlandt.github.io/domoticazaken/
 
+---
+**Status**: ✅ All deployment issues fixed - site should now show properly with CSS and images!
+
 ## Browser Support
 
 - Modern browsers (Chrome, Firefox, Safari, Edge)
