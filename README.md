@@ -18,7 +18,7 @@ Een statische website gebouwd met Eleventy (11ty) en Tailwind CSS voor AI-fotove
 - **Templates**: Nunjucks (.njk)
 - **JavaScript**: Vanilla JavaScript
 - **Build Tooling**: Node.js/npm
-- **Hosting**: GitHub Pages
+- **Hosting**: GitHub Pages set to gh-pages branch
 
 ## Development
 
