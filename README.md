@@ -101,7 +101,7 @@ De site wordt automatisch deployed naar GitHub Pages bij elke push naar de main 
 
 **Belangrijk**: Zorg ervoor dat GitHub Pages is geconfigureerd om GitHub Actions te gebruiken, NIET "Deploy from a branch".
 
-Live site: https://gaarlandt.github.io/domoticazaken/
+Live site: https://www.domoticazaken.nl/
 
 ---
 **Status**: ✅ All deployment issues fixed - site should now show properly with CSS and images!
