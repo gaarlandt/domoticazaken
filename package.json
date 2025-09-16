@@ -2,9 +2,9 @@
   "name": "mister-funda-eleventy",
   "version": "1.0.0",
   "scripts": {
-    "watch:css": "tailwindcss -i ./src/css/style.css -o ./_site/css/style.css --watch",
+    "watch:css": "tailwindcss -i ./src/css/style.css -o ./src/css/main.css --watch",
     "watch:eleventy": "eleventy --serve",
-    "build:css": "tailwindcss -i ./src/css/style.css -o ./_site/css/style.css --minify",
+    "build:css": "tailwindcss -i ./src/css/style.css -o ./src/css/main.css --minify",
     "build:eleventy": "eleventy",
     "start": "npm-run-all --parallel watch:*",
     "build": "npm-run-all build:*"

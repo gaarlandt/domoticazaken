@@ -30,18 +30,18 @@ layout: base.njk
         <h3 class="text-lg text-gray-400 mb-8 font-medium">Vertrouwd door topmakelaars in het hele land</h3>
         <div class="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
             <ul class="flex items-center justify-center md:justify-start [&_li]:mx-4 [&_img]:max-w-none animate-infinite-scroll">
-                <li><img src="/img/user_image_1.jpg" class="rounded-2xl h-64 w-auto" alt="Showcase image 1" /></li>
-                <li><img src="/img/user_image_4.jpg" class="rounded-2xl h-64 w-auto" alt="Showcase image 2" /></li>
-                <li><img src="/img/user_image_5.jpg" class="rounded-2xl h-64 w-auto" alt="Showcase image 3" /></li>
-                <li><img src="/img/user_image_1.jpg" class="rounded-2xl h-64 w-auto" alt="Showcase image 1" /></li>
-                <li><img src="/img/user_image_4.jpg" class="rounded-2xl h-64 w-auto" alt="Showcase image 2" /></li>
+                <li><img src="{{ '/images/Funda foto product.jpeg' | url }}" class="rounded-2xl h-64 w-auto" alt="Showcase image 1" /></li>
+                <li><img src="{{ '/images/Bennekom-Project-Garden.jpeg' | url }}" class="rounded-2xl h-64 w-auto" alt="Showcase image 2" /></li>
+                <li><img src="{{ '/images/Foto realistisch product.jpeg' | url }}" class="rounded-2xl h-64 w-auto" alt="Showcase image 3" /></li>
+                <li><img src="{{ '/images/Funda foto product.jpeg' | url }}" class="rounded-2xl h-64 w-auto" alt="Showcase image 1" /></li>
+                <li><img src="{{ '/images/Bennekom-Project-Garden.jpeg' | url }}" class="rounded-2xl h-64 w-auto" alt="Showcase image 2" /></li>
             </ul>
             <ul class="flex items-center justify-center md:justify-start [&_li]:mx-4 [&_img]:max-w-none animate-infinite-scroll" aria-hidden="true">
-                <li><img src="/img/user_image_1.jpg" class="rounded-2xl h-64 w-auto" alt="Showcase image 1" /></li>
-                <li><img src="/img/user_image_4.jpg" class="rounded-2xl h-64 w-auto" alt="Showcase image 2" /></li>
-                <li><img src="/img/user_image_5.jpg" class="rounded-2xl h-64 w-auto" alt="Showcase image 3" /></li>
-                <li><img src="/img/user_image_1.jpg" class="rounded-2xl h-64 w-auto" alt="Showcase image 1" /></li>
-                <li><img src="/img/user_image_4.jpg" class="rounded-2xl h-64 w-auto" alt="Showcase image 2" /></li>
+                <li><img src="{{ '/images/Funda foto product.jpeg' | url }}" class="rounded-2xl h-64 w-auto" alt="Showcase image 1" /></li>
+                <li><img src="{{ '/images/Bennekom-Project-Garden.jpeg' | url }}" class="rounded-2xl h-64 w-auto" alt="Showcase image 2" /></li>
+                <li><img src="{{ '/images/Foto realistisch product.jpeg' | url }}" class="rounded-2xl h-64 w-auto" alt="Showcase image 3" /></li>
+                <li><img src="{{ '/images/Funda foto product.jpeg' | url }}" class="rounded-2xl h-64 w-auto" alt="Showcase image 1" /></li>
+                <li><img src="{{ '/images/Bennekom-Project-Garden.jpeg' | url }}" class="rounded-2xl h-64 w-auto" alt="Showcase image 2" /></li>
             </ul>
         </div>
     </div>
@@ -93,11 +93,11 @@ layout: base.njk
         <!-- Image Slider will be here -->
         <div id="image-slider" 
              class="relative w-full aspect-[4/3] max-w-full select-none rounded-2xl overflow-hidden shadow-2xl group"
-             data-before="/img/user_image_2.jpg"
-             data-after="/img/user_image_3.jpg">
-            <img src="/img/user_image_3.jpg" alt="Na" draggable="false" class="absolute inset-0 w-full h-full object-cover">
+             data-before="{{ '/slider-images/before.jpeg' | url }}"
+             data-after="{{ '/slider-images/After.jpg' | url }}">
+            <img src="{{ '/slider-images/After.jpg' | url }}" alt="Na" draggable="false" class="absolute inset-0 w-full h-full object-cover">
             <div class="absolute inset-0 w-full h-full object-cover slider-overlay" style="clip-path: inset(0 50% 0 0);">
-                <img src="/img/user_image_2.jpg" alt="Voor" draggable="false" class="absolute inset-0 w-full h-full object-cover">
+                <img src="{{ '/slider-images/before.jpeg' | url }}" alt="Voor" draggable="false" class="absolute inset-0 w-full h-full object-cover">
             </div>
             <div class="absolute top-0 bottom-0 w-1 bg-white/70 pointer-events-none transition-opacity duration-300 opacity-75 group-hover:opacity-100 slider-line" style="left: 50%; transform: translateX(-50%);">
                 <div class="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 h-12 w-12 bg-white/70 backdrop-blur-sm rounded-full flex items-center justify-center shadow-lg ring-2 ring-white/50 slider-handle" style="cursor: ew-resize; pointer-events: auto;">
@@ -123,21 +123,21 @@ layout: base.njk
         </div>
         <div class="grid md:grid-cols-3 gap-8">
             <div class="rounded-2xl overflow-hidden border border-white/10 group">
-                <img src="/img/user_image_5.jpg" alt="Stijlvol interieur" class="h-60 w-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                <img src="{{ '/images/240704_Papentorenvest-10-20-34-Haarlem_W34-2.01_Int_bedroom.jpeg' | url }}" alt="Stijlvol interieur" class="h-60 w-full object-cover group-hover:scale-105 transition-transform duration-300" />
                 <div class="p-6 bg-white/5">
                     <h3 class="text-xl font-bold mb-2">Interieur Showcase</h3>
                     <p class="text-gray-400">Verbeter interieurfoto's met perfecte verlichting, kleurcorrectie en AI-gestuurde virtuele staging.</p>
                 </div>
             </div>
             <div class="rounded-2xl overflow-hidden border border-white/10 group">
-                <img src="/img/user_image_4.jpg" alt="Moderne bakstenen gebouw buitenkant" class="h-60 w-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                <img src="{{ '/images/240723_Papentorenvest-10-20-34-Haarlem_Building-34-40-Front_Rev004-scaled.jpeg' | url }}" alt="Moderne bakstenen gebouw buitenkant" class="h-60 w-full object-cover group-hover:scale-105 transition-transform duration-300" />
                 <div class="p-6 bg-white/5">
                     <h3 class="text-xl font-bold mb-2">Exterieur Aanzicht</h3>
                     <p class="text-gray-400">Transformeer de buitenkant van panden met luchtvervanging, digitale landschapsarchitectuur en lichtaanpassingen.</p>
                 </div>
             </div>
             <div class="rounded-2xl overflow-hidden border border-white/10 group">
-                <img src="/img/user_image_1.jpg" alt="Licht interieur met designmeubels" class="h-60 w-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                <img src="{{ '/images/Bennekom-Project-Garden.jpeg' | url }}" alt="Licht interieur met designmeubels" class="h-60 w-full object-cover group-hover:scale-105 transition-transform duration-300" />
                 <div class="p-6 bg-white/5">
                     <h3 class="text-xl font-bold mb-2">3D Plattegronden</h3>
                     <p class="text-gray-400">Bied klanten een duidelijke indeling van het pand, zodat ze de ruimte en de doorstroom kunnen visualiseren.</p>
