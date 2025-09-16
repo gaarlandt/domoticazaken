@@ -104,7 +104,7 @@ De site wordt automatisch deployed naar GitHub Pages bij elke push naar de main 
 Live site: https://www.domoticazaken.nl/
 
 ---
-**Status**: 🔄 Fresh deployment - clearing all caches and rebuilding from scratch!
+**Status**: 🔧 Fix peaceiris deployment - ensure only _site content is deployed (v2)!
 
 ## Browser Support
 
