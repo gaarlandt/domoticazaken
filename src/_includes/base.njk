@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title or "Mister Funda - Herontdek Je Foto's met AI" }}</title>
+    <meta name="description" content="Transformeer je afbeeldingen moeiteloos in verbluffende, professionele meesterwerken met onze geavanceerde AI-technologie. Probeer 1 foto gratis!">
+    <link rel="stylesheet" href="{{ '/css/main.css' | url }}">
+</head>
+<body class="bg-[#121212] text-white">
+    {% include "header.njk" %}
+    <main>
+        {{ content | safe }}
+    </main>
+    {% include "footer.njk" %}
+    <script src="{{ '/js/main.js' | url }}" defer></script>
+</body>
+</html>
