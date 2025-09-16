@@ -104,7 +104,7 @@ De site wordt automatisch deployed naar GitHub Pages bij elke push naar de main 
 Live site: https://www.domoticazaken.nl/
 
 ---
-**Status**: ✅ All deployment issues fixed - site should now show properly with CSS and images!
+**Status**: 🔄 Fresh deployment - clearing all caches and rebuilding from scratch!
 
 ## Browser Support
 
