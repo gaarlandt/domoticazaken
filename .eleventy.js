@@ -16,6 +16,6 @@ module.exports = function(eleventyConfig) {
       output: "_site",
       includes: "_includes"
     },
-    pathPrefix: process.env.ELEVENTY_ENV === "prod" ? "/domoticazaken/" : "/"
+    pathPrefix: process.env.NODE_ENV === "production" ? "/domoticazaken/" : "/"
   };
 };
