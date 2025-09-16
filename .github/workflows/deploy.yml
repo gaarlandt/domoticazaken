@@ -22,9 +22,7 @@ jobs:
         run: npm ci
 
       - name: Build site
-        run: |
-          npm run build:css
-          npx @11ty/eleventy --pathprefix="/"
+        run: npm run build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
